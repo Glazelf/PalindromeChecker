@@ -49,9 +49,9 @@ namespace PalindromeChecker.WinForms
             // PalindromeTextBox
             // 
             this.PalindromeTextBox.AccessibleName = "PalindromeTextBox";
-            this.PalindromeTextBox.Location = new System.Drawing.Point(65, 25);
+            this.PalindromeTextBox.Location = new System.Drawing.Point(49, 25);
             this.PalindromeTextBox.Name = "PalindromeTextBox";
-            this.PalindromeTextBox.Size = new System.Drawing.Size(252, 23);
+            this.PalindromeTextBox.Size = new System.Drawing.Size(268, 23);
             this.PalindromeTextBox.TabIndex = 1;
             this.PalindromeTextBox.Text = "Put text here...";
             // 
