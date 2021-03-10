@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Drawing;
 using System.Linq;
 using System.Windows.Forms;
 
@@ -15,19 +16,19 @@ namespace PalindromeChecker.WinForms
         {
             string palindromeText = PalindromeTextBox.Text;
             bool isPalindrome = palindromeText.SequenceEqual(palindromeText.Reverse());
-            string returnText;
+
             if (isPalindrome)
             {
-                returnText = $"\"{palindromeText}\" is a palindrome.";
+                CheckResultLabel.Text = $"\"{palindromeText}\" is a palindrome.";
+                CheckResultLabel.ForeColor = Color.Green;
+                CheckResultLabel.Visible = true;
             }
             else
             {
-                returnText = $"\"{palindromeText}\" is not a palindrome.";
+                CheckResultLabel.Text = $"\"{palindromeText}\" is not a palindrome.";
+                CheckResultLabel.ForeColor = Color.Red;
+                CheckResultLabel.Visible = true;
             }
-            MessageBox.Show(returnText,
-                "PalindromeChecker Result",
-                MessageBoxButtons.OK
-            );
             return;
         }
     }
