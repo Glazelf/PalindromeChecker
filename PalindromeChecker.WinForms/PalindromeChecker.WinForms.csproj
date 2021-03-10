@@ -4,6 +4,9 @@
     <OutputType>WinExe</OutputType>
     <TargetFramework>net5.0-windows</TargetFramework>
     <UseWindowsForms>true</UseWindowsForms>
+    <StartupObject>PalindromeChecker.WinForms.Program</StartupObject>
+    <PackageId>PalindromeChecker.WinForms</PackageId>
+    <AssemblyName>PalindromeChecker</AssemblyName>
   </PropertyGroup>
 
 </Project>
